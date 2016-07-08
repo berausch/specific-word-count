@@ -6,7 +6,7 @@
 
 ## Description
 
-_This application allows the user to add the name, phone number and address of a contact to an Address Book where they can store all their contacts. The user can add contacts, view all their contacts names on a list, view an individual contacts information, and clear all their contacts (with a verification page in case of second thoughts) if they want to start over. This app is an exercise in csharp object creation and manipulation._
+_This application allows the user to input a phrase and a word into the application. The application will then count the amount of times the word is in the phrase. The application takes into account mismatching of cases, sentence enders(?, !, .), and commas.  This app is an exercise in csharp Xunit testing._
 
 ## Setup/Installation Requirements
 
@@ -15,11 +15,12 @@ _This application allows the user to add the name, phone number and address of a
 * _run the command "dnu restore"_
 * _run the command "dnx kestrel"_
 * _open your preferred internet browser to localhost:5004_
-* _Start Adding Contacts!_
+* _Start Counting words!_
 
 ## Technologies Used
 
 * _C#_
+* _Xunit_
 * _Nancy_
 * _Windows Powershell_
 * _Mono_
