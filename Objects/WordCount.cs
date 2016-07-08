@@ -9,7 +9,8 @@ namespace RepeatCounter.Objects
   {
     public bool ContainsWord(string inputPhrase, string inputWord)
     {
-      return false;
+
+      return inputPhrase.Contains(inputWord);
     }
   }
 }

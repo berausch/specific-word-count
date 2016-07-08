@@ -8,7 +8,13 @@ namespace RepeatCounter.Objects
     public void ContainsWord_SentenceContainsWord_false()
     {
       RepeatCounter Containstest = new RepeatCounter();
-      Assert.Equal(false, Containstest.ContainsWord("to be", "not")); 
+      Assert.Equal(true, Containstest.ContainsWord("you like cheese", "pizza"));
+    }
+    [Fact]
+    public void ContainsWord_SentenceContainsWord_true()
+    {
+      RepeatCounter Containstest = new RepeatCounter();
+      Assert.Equal(true, Containstest.ContainsWord("you like cheese", "cheese"));
     }
   }
 }
