@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
-namespace RepeatCounter.Objects
+namespace RepeatCounters.Objects
 {
   public class RepeatCounter
   {
@@ -16,7 +16,7 @@ namespace RepeatCounter.Objects
     {
       RepeatCounter newCounter = new RepeatCounter();
       int counter = 0;
-      if(newCounter.ContainsWord(inputPhrase, inputWord)== true)
+      if(newCounter.ContainsWord(inputPhrase, inputWord) == true && newCounter.WordNotSingular(inputWord)== false)
       { string[] phraseArray = inputPhrase.ToLower().Split(' ');
        foreach(string word in phraseArray)
        { if(word.EndsWith("?") == true|| word.EndsWith(".") == true ||word.EndsWith("!") == true || word.EndsWith(",") == true){

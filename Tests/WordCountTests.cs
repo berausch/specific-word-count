@@ -1,6 +1,6 @@
 using Xunit;
 
-namespace RepeatCounter.Objects
+namespace RepeatCounters.Objects
 {
   public class RepeatCounterTest
   {

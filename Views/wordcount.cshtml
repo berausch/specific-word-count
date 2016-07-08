@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Word Count!</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+  </head>
+  <body>
+      <h2>The number of times your word is in your phrase is:</h2>
+      <h1>@Model</h1>
+      @if(@Model == 0){
+      <h2>Looks like there were no matches...maybe you should try again with different word, or check your inputs</h2>
+      }
+  </body>
+</html>
