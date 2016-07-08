@@ -1,0 +1,12 @@
+Specs
+1. It finds that the word is in the sentence | inputs: "you like cheese" / "like" |output: true| input explanation: I choose an all lowercase phrase that had no special characters so there would be no confusion, and I chose a second input that has only one instance in the phrase since we are just checking if the phrase contains the word, with a simple bool output.
+
+2. It finds that the word is not in the sentence | inputs: "you like cheese" / "pizza" |output: false| input explanation: I choose these inputs for pretty much the same reasons as above, except it will be a false output.
+
+3. It finds the number of times the word is in the sentence | inputs: "to be or not to be" / "to" |output: 2| input explanation: I choose an all lowercase phrase that had no special characters so there would be no confusion, and I chose a second input that had multiple instances in the phrase so I can check the counting logic.
+
+4. It finds the number of times the word is in the sentence even if the cases don't match. | inputs: "To be or not to be" / "to" |output: 2| input explanation: I choose a phrase that had no special characters, but it did have upper-case characters. I made sure the sentence had a upper-cased match, and that the word was all lower case so I could test if they still matched.  I also chose a second input that had multiple instances in the phrase so I can again check the counting logic.
+
+5. It finds the number of times the word is in the sentence even if there are special characters that could interfere. | inputs: "to be or not to be?" / "be" |output: 2| input explanation: I choose a phrase that had a question mark and I made sure the sentence had a match where the question mark could trip up the matching process. I also chose a second input that had multiple instances in the phrase so I can again check the counting logic.
+
+6. It catches if the word entered is actually two words | inputs: "to be or not to be" / "to be" |output: false| input explanation: I choose a phrase that had nothing special, but the word was actually 2 words.
