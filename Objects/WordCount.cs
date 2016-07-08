@@ -15,9 +15,16 @@ namespace RepeatCounter.Objects
     public int CountRepeats(string inputPhrase, string inputWord)
     {
       RepeatCounter newCounter = new RepeatCounter();
+      int counter = 0;
       if(newCounter.ContainsWord(inputPhrase, inputWord)== true)
-      {
-      return 1;
+      { string[] phraseArray = inputPhrase.ToLower().Split(' ');
+       foreach(string word in phraseArray)
+       {
+         if(word == inputWord){
+           counter+=1;
+         }
+       }
+       return counter;
       } else {
         return 0;
       }
