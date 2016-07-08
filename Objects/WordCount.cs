@@ -19,7 +19,13 @@ namespace RepeatCounter.Objects
       if(newCounter.ContainsWord(inputPhrase, inputWord)== true)
       { string[] phraseArray = inputPhrase.ToLower().Split(' ');
        foreach(string word in phraseArray)
-       {
+       { if(word.EndsWith("?") == true|| word.EndsWith(".") == true ||word.EndsWith("!") == true || word.EndsWith(",") == true){
+
+         string word2 = word.Remove(word.Length -1);
+         if(word2 == inputWord){
+           counter+=1;
+         }
+       }
          if(word == inputWord){
            counter+=1;
          }
@@ -28,6 +34,9 @@ namespace RepeatCounter.Objects
       } else {
         return 0;
       }
+    }
+    public bool WordNotSingular(inputWord){
+      return inputWord.Contains(" ");
     }
   }
 }
