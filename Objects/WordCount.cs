@@ -35,7 +35,7 @@ namespace RepeatCounter.Objects
         return 0;
       }
     }
-    public bool WordNotSingular(inputWord){
+    public bool WordNotSingular(string inputWord){
       return inputWord.Contains(" ");
     }
   }
