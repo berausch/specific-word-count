@@ -12,5 +12,15 @@ namespace RepeatCounter.Objects
 
       return inputPhrase.Contains(inputWord);
     }
+    public int CountRepeats(string inputPhrase, string inputWord)
+    {
+      RepeatCounter newCounter = new RepeatCounter();
+      if(newCounter.ContainsWord(inputPhrase, inputWord)== true)
+      {
+      return 1;
+      } else {
+        return 0;
+      }
+    }
   }
 }
